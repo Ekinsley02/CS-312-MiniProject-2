@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Your Joke</title>
+</head>
+<body>
+  <% if (joke.type === 'single') { %>
+    <p><%= joke.joke %></p>
+  <% } else { %>
+    <p><%= joke.setup %></p>
+    <p><%= joke.delivery %></p>
+  <% } %>
+  <a href="/">Get Another Joke</a>
+</body>
+</html>
