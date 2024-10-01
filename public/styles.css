@@ -1,0 +1,152 @@
+/* default styles */
+*   {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+  
+  /* body styling */
+  body 
+    {
+
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient( to bottom right, #6dd5ed, #2193b0 );
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+  
+  /* container styling */
+  .container 
+    {
+
+    background-color: rgba( 255, 255, 255, 0.9 );
+    width: 90%;
+    max-width: 500px;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba( 0,0,0,0.3 );
+    }
+  
+  /* headings */
+  h1 
+    {
+
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #007BFF;
+    }
+  
+  /* paragraphs */
+  p 
+    {
+
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    }
+  
+  /* form styling */
+  form 
+    {
+
+    margin-bottom: 20px;
+    }
+  
+    /* input styling */
+  input[ type="text" ] 
+    {
+
+    width: 80%;
+    padding: 12px 15px;
+    font-size: 1em;
+    margin-bottom: 20px;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+    }
+  
+  /* input text styling */
+  input[type="text"]:focus 
+    {
+
+    border-color: #0056b3;
+    }
+
+  /* button styling */
+  button 
+    {
+
+    padding: 12px 25px;
+    font-size: 1em;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    }
+  
+  /* button hover styling*/
+  button:hover 
+    {
+
+    background-color: #0056b3;
+    }
+  
+  /* Joke box styling */
+  .joke-box 
+    {
+
+    background-color: #f0f8ff;
+    border: 1px solid #007BFF;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    }
+  
+      /* joke box paragraph styling */
+  .joke-box p 
+    {
+
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    }
+  
+  /* Links styling */
+  a 
+    {
+
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+    }
+
+  /* Hover styling */
+  a:hover 
+    {
+
+    text-decoration: underline;
+    }
+  
+  /* responding design */
+  @media (max-width: 600px) 
+    {
+    
+      /* input text response */
+    input[type="text"] {
+      width: 100%;
+    }
+    
+      /* button design */
+    button 
+      {
+
+      width: 100%;
+      }
+  }
+  

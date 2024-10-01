@@ -1,15 +1,46 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
+   <!-- title called your joke -->
   <title>Your Joke</title>
+
+  <link rel="stylesheet" href="/styles.css">
+
 </head>
+
 <body>
-  <% if (joke.type === 'single') { %>
-    <p><%= joke.joke %></p>
-  <% } else { %>
-    <p><%= joke.setup %></p>
-    <p><%= joke.delivery %></p>
-  <% } %>
-  <a href="/">Get Another Joke</a>
+
+   <!-- container to display joke -->
+  <div class="container">
+
+     <!-- display joke -->
+    <h1>Here's Your Joke, <%= name %>!</h1>
+
+    <div class="joke-box">
+
+       <!-- ldisplay joke -->
+      <% if (joke.type === 'single') { %>
+        <p><%= joke.joke %></p>
+
+      <% } 
+
+       <!-- display delivery -->
+
+      else { %>
+        <p><strong><%= joke.setup %></strong></p>
+        <p><%= joke.delivery %></p>
+
+      <% } %>
+      
+    </div>
+
+    <a href="/">Get Another Joke</a>
+
+  </div>
+
 </body>
+
 </html>

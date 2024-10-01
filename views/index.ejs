@@ -1,13 +1,36 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
+   <!-- title called Get A Joke -->
   <title>Get a Joke</title>
+
+   <!-- link to the CSS stylesheet -->
+  <link rel="stylesheet" href="/styles.css">
+
 </head>
+
 <body>
-  <h1>Enter Your Name to Get a Joke</h1>
-  <form action="/get-joke" method="POST">
-    <input type="text" name="name" placeholder="Your Name" required />
-    <button type="submit">Get Joke</button>
-  </form>
+
+   <!-- container for greeting-->
+  <div class="container">
+
+    <h1>Welcome to my joke generating program!</h1>
+
+    <p>Please enter a name to find a joke with it.</p>
+
+    <form action="/get-joke" method="POST">
+
+      <input type="text" name="name" placeholder="Your Name" required />
+
+      <button type="submit">Get Joke</button>
+
+    </form>
+
+  </div>
+
 </body>
+
 </html>
